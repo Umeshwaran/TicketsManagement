@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "319931722124",
+    "firebase_url": "https://ticketsmanagement-36947.firebaseio.com",
+    "project_id": "ticketsmanagement-36947",
+    "storage_bucket": "ticketsmanagement-36947.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:319931722124:android:63ee8227da99c6db",
+        "android_client_info": {
+          "package_name": "com.example.android.ticketsmanagement"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "319931722124-n3iocu7j8424npopt8krc8tabdnt4s4v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.android.ticketsmanagement",
+            "certificate_hash": "9dc97a5ea43976ca46c73de6fbc9a7ffcf302a0d"
+          }
+        },
+        {
+          "client_id": "319931722124-t2rh177evdfucg0in3slg0otvbv23vll.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyGWkJ7XIqiTCLtE1DQmShRm5pIE9ZEsY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "319931722124-t2rh177evdfucg0in3slg0otvbv23vll.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

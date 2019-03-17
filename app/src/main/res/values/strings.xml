@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Tickets Management</string>
+    <string name="Password">Password</string>
+    <string name="Name">Name</string>
+    <string name="Button_submit">Submit</string>
+    <string name="search_hint">Search</string>
+    <string name="FCM_PREF">com.example.android.ticketsmanagement.fcm_pref</string>
+    <string name="FCM_TOKEN">com.example.android.ticketsmanagement.fcm_token</string>
+
+    <string name="title_activity_second">Second</string>
+    <string name="desc">Description</string>
+    <string name="loc">Location</string>
+    <string name="contact">Contact Number</string>
+    <string name="Title">Ticket Title</string>
+    <string name="action_search">Search</string>
+    <string name="action_spin">Users</string>
+    <string name="action_logout">Logout</string>
+    <string-array name="Location">
+        <item>Select a branch</item>
+
+
+        <item>Capital Tower</item>
+        <item>Asia Square Tower</item>
+        <item>Changi Business Park</item>
+
+    </string-array>
+    <string-array name="Users">
+
+        <item>Select an user</item>
+        <item>User</item>
+        <item>Engineer</item>
+        <item>Manager</item>
+
+    </string-array>
+    <string-array name="status">
+
+        <item>Open</item>
+        <item>Inprogress</item>
+        <item>Pending</item>
+        <item>Resolved</item>
+        <item>Closed</item>
+
+    </string-array>
+</resources>

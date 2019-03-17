@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.ticketsmanagement.CreateEngineer">
+
+    <TextView
+        android:id="@+id/head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Create Engineer"
+        android:textSize="18dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/ename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/head"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+       />
+
+    <EditText
+        android:id="@+id/econtact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Contact"
+        android:inputType="number"
+        android:layout_below="@+id/ename"
+        android:layout_alignLeft="@+id/ename"
+        android:layout_alignStart="@+id/ename"/>
+
+    <Spinner
+        android:id="@+id/elocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/econtact"
+        android:entries="@array/Location"
+        android:layout_alignLeft="@+id/econtact"
+        android:layout_alignStart="@+id/econtact"/>
+
+    <Button
+        android:id="@+id/btnreset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:layout_alignBaseline="@+id/btncreate"
+        android:layout_alignBottom="@+id/btncreate"
+        android:layout_alignLeft="@+id/epassword"
+        android:layout_alignStart="@+id/epassword"/>
+
+    <Button
+        android:id="@+id/btncreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/epassword"
+        android:layout_alignRight="@+id/epassword"
+        android:layout_below="@+id/epassword"
+        android:layout_marginTop="44dp"
+        android:text="Create"/>
+
+    <EditText
+        android:id="@+id/epassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/elocation"
+        android:layout_alignRight="@+id/elocation"
+        android:layout_below="@+id/elocation"
+        android:layout_marginTop="33dp"
+        android:ems="10"
+        android:inputType="numberPassword"
+        android:hint="Password"/>
+</RelativeLayout>

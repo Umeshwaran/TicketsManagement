@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.ticketsmanagement.Description">
+
+
+    <TextView
+        android:id="@+id/assignto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="62dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="70dp"
+        android:text="Assigned To"/>
+
+    <Spinner
+        android:id="@+id/assignspin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/assignto"
+        android:layout_toRightOf="@+id/assignto"
+        android:layout_toEndOf="@+id/assignto"
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp"/>
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/assignto"
+        android:layout_alignStart="@+id/assignto"
+        android:layout_below="@+id/assignspin"
+        android:layout_marginTop="38dp"
+        android:text="Status"/>
+
+    <Spinner
+        android:id="@+id/statusspin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/status"
+        android:layout_alignTop="@+id/status"
+        android:layout_alignLeft="@+id/assignspin"
+        android:layout_alignStart="@+id/assignspin"/>
+
+    <TextView
+        android:id="@+id/tcktitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/status"
+
+        android:layout_alignStart="@+id/status"
+        android:layout_below="@+id/statusspin"
+        android:layout_marginTop="37dp"
+        android:text="Ticket Title"/>
+
+    <TextView
+        android:id="@+id/tck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/statusspin"
+        android:layout_alignStart="@+id/statusspin"
+        android:layout_alignTop="@+id/tcktitle"
+        />
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tcktitle"
+        android:layout_alignStart="@+id/tcktitle"
+        android:layout_below="@+id/tcktitle"
+        android:layout_marginTop="47dp"
+        android:text="Description"/>
+
+    <EditText
+        android:id="@+id/desctxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:lines="5"
+        android:layout_alignTop="@+id/desc"
+        android:layout_toRightOf="@+id/assignto"
+        android:layout_toEndOf="@+id/assignto"
+        android:maxLines="5"
+        android:maxLength="2000"
+        android:scrollHorizontally="false"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp"/>
+
+    <Button
+        android:id="@+id/savebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/desctxt"
+        android:layout_alignStart="@+id/desctxt"
+        android:layout_below="@+id/desctxt"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="68dp"
+        android:text="Save"/>
+
+    <TextView
+        android:id="@+id/tid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="11dp"
+        android:layout_toEndOf="@+id/savebtn"
+        android:layout_toRightOf="@+id/savebtn"
+        />
+
+    <TextView
+        android:id="@+id/res"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/desc"
+        android:layout_alignStart="@+id/desc"
+        android:layout_below="@+id/desctxt"
+        android:layout_marginTop="24dp"
+        android:text="Resolution"/>
+
+    <EditText
+        android:id="@+id/resolutiontxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_alignBaseline="@+id/res"
+        android:layout_alignBottom="@+id/res"
+        android:layout_alignLeft="@+id/desctxt"
+        android:layout_alignStart="@+id/desctxt"/>
+
+</RelativeLayout>
